@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>cid</title>
+    <style>
+    body {
+        font-family: Helvetica, sans-serif;
+        padding: 5%;
+        text-align: center;
+        font-size: 50;
+    }
+     
+    /* Styling the area of the slides */
+     
+    #slideshow {
+        overflow: hidden;
+        height: 510px;
+        width: 728px;
+        margin: 0 auto;
+    }
+     
+    /* Style each of the sides 
+    with a fixed width and height */
+     
+    .slide {
+        float: left;
+        height: 810px;
+        width: 728px;
+    }
+     
+    /* Add animation to the slides */
+     
+    .slide-wrapper {
+         
+        /* Calculate the total width on the
+      basis of number of slides */
+        width: calc(728px * 5);
+         
+        /* Specify the animation with the
+      duration and speed */
+        animation: slide 10s ease infinite;
+    }
+     
+    /* Set the background color
+    of each of the slides */
+     
+    .slide:nth-child(1) {
+        background:pink;
+    }
+     
+    .slide:nth-child(2) {
+        background: pink;
+    }
+     
+    .slide:nth-child(3) {
+        background:pink;
+    }
+     
+    .slide:nth-child(4) {
+        background:pink;
+    }
+    .slide:nth-child(5) {
+        background:pink;
+    }
+     
+    /* Define the animation 
+    for the slideshow */
+     
+    @keyframes slide {
+         
+        /* Calculate the margin-left for 
+      each of the slides */
+        20% {
+            margin-left: 0px;
+        }
+        40% {
+            margin-left: calc(-728px * 1);
+        }
+        60% {
+            margin-left: calc(-728px * 2);
+        }
+        80% {
+            margin-left: calc(-728px * 3);
+        }
+        100% {
+            margin-left: calc(-728px * 4);
+        }
+    }
+    </style>
+</head>
+ 
+<body>
+     
+    <!-- Define the slideshow container -->
+    <div id="slideshow">
+        <div class="slide-wrapper">
+             
+            <!-- Define each of the slides
+         and write the content -->
+            <div class="slide">
+                <h1 class="slide-number">
+                    <img src="Screenshot-2023-06-22-140613.jpg"alt=backgrounds image width="600" height="500">
+                </h1> 
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                    <img src="front_medium_extended.jpeg"alt=backgrounds image width="600" height="500">
+                </h1> 
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                    <img src=" Typography-T-Shirt-Design-Ideas-Example-9.png"alt=backgrounds image width="600" height="500">
+                    
+                
+                </h1> 
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                    <img src=" 61E9lwpBUzL._AC_SX425_.jpg"alt=backgrounds image width="600" height="500">
+                </h1> 
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                    <img src=" fan.jpg"alt=backgrounds image width="600" height="500">
+                </h1> 
+            </div>
+        </div>
+    </div>
+    <div class="s">
+        </div>
+        <style>
+            .s{
+                background-color:pink;
+                width:2200px;
+                height:2000px;
+                margin-left:-100px;
+                margin-top:-1000px;
+            }
+        </style>
+</body>
+</html>
